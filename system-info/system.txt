@@ -1,0 +1,16 @@
+Linux tester-OptiPlex-SFF-7020 7.0.0-30-generic #30-Ubuntu SMP PREEMPT_DYNAMIC Fri Jul 31 18:22:54 UTC 2026 x86_64 GNU/Linux
+               total        used        free      shared  buff/cache   available
+Mem:            14Gi       3.3Gi       7.4Gi       701Mi       4.5Gi        11Gi
+Swap:          4.0Gi          0B       4.0Gi
+Filesystem                         Size  Used Avail Use% Mounted on
+tmpfs                              3.0G  3.1M  3.0G   1% /run
+none                               1.0M     0  1.0M   0% /run/credentials/systemd-cryptsetup@dm_crypt\x2d0.service
+/dev/mapper/ubuntu--vg-ubuntu--lv  466G   13G  429G   3% /
+tmpfs                              7.5G  4.0K  7.5G   1% /dev/shm
+efivarfs                           438K  316K  118K  73% /sys/firmware/efi/efivars
+none                               1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+none                               1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+tmpfs                              7.5G   12K  7.5G   1% /tmp
+/dev/nvme0n1p2                     2.0G   77M  1.8G   5% /boot
+/dev/nvme0n1p1                     1.1G  6.4M  1.1G   1% /boot/efi
+tmpfs                              1.5G  4.1M  1.5G   1% /run/user/1000
