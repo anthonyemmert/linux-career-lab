@@ -96,3 +96,27 @@ INNER JOIN maintenance AS m
 GROUP BY v.id, v.vehicle_number, v.make, v.model
 ORDER BY total_maintenance_cost DESC
 LIMIT 1;
+-- 11. September fuel usage and latest mileage by vehicle
+-- Uses one mileage snapshot per vehicle to avoid multiplying rows
+-- when joining multiple one-to-many tables.
+SELECT
+    v.vehicle_number,
+    v.make,
+    v.model,
+    ml.mileage AS latest_mileage,
+    SUM(fl.gallons) AS total_fuel_gallons,
+    SUM(fl.cost) AS total_fuel_cost
+FROM vehicles AS v
+INNER JOIN mileage_logs AS ml
+    ON v.id = ml.vehicle_id
+    AND ml.log_date = '2026-09-15'
+INNER JOIN fuel_logs AS fl
+    ON v.id = fl.vehicle_id
+    AND fl.fuel_date BETWEEN '2026-09-01' AND '2026-09-30'
+GROUP BY
+    v.id,
+    v.vehicle_number,
+    v.make,
+    v.model,
+    ml.mileage
+ORDER BY total_fuel_cost DESC;
