@@ -119,3 +119,35 @@ SQL concepts:
 ## SQL Files
 
 `fleet-management-queries.sql` contains the fleet-management queries used throughout the project.
+
+
+## Fleet Management Reporting
+
+Created a PostgreSQL reporting view that combines
+maintenance records and vehicle downtime.
+
+### Report Includes
+- Vehicle information
+- Maintenance record counts
+- Total maintenance costs
+- Total downtime days
+
+### Files
+- fleet-management-report-view.sql: Creates the reporting view.
+- reports/fleet_management_report.csv: Exported report results.
+
+### Data Validation
+
+Verified the exported CSV using Linux AWK.
+
+Results:
+- Vehicles: 4
+- Maintenance records: 4
+- Total maintenance spending: $1,260.49
+- Total downtime: 6 elapsed days
+
+All totals matched the PostgreSQL database.
+
+Note: This project uses sample fleet data. The CSV
+represents a snapshot and must be exported again
+when the underlying database changes.

@@ -1,0 +1,5 @@
+vehicle_number,make,model,maintenance_records,maintenance_cost,downtime_days
+TRK-001,Ford,F-550,1,650.00,3
+VAN-001,Ford,Transit,2,515.49,2
+VAN-002,Chevrolet,Express,1,95.00,1
+VAN-003,Ram,ProMaster,0,0,0
