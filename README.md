@@ -135,6 +135,7 @@ maintenance records and vehicle downtime.
 ### Files
 - fleet-management-report-view.sql: Creates the reporting view.
 - reports/fleet_management_report.csv: Exported report results.
+- [Fleet Findings Report](reports/fleet-findings-september-2026.md): One-page analysis of fleet maintenance costs, repair frequency, and downtime.
 
 ### Data Validation
 
