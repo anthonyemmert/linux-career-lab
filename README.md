@@ -3,7 +3,31 @@
 
 Hands-on Linux, PostgreSQL, and SQL practice focused on realistic fleet-management scenarios.
 
-## Fleet SQL Project
+## Featured Portfolio Project
+
+### Fleet Cost & Reliability Analytics
+
+Built an interactive Power BI dashboard using a synthetic 75-vehicle fleet dataset to analyze maintenance cost, downtime, mileage, fleet status, and total operating cost.
+
+The project includes:
+
+- Python data preparation
+- Power BI dashboard development
+- Power Query data cleanup
+- DAX measures and filter context
+- Interactive Status and Vehicle Type slicers
+- Fleet cost and reliability analysis
+- Management-focused findings and business decisions
+
+Key findings from the synthetic dataset included:
+
+- Pickup trucks had the highest average maintenance cost.
+- Operating cost generally increased as vehicle mileage increased.
+- UNIT-026 had the highest total operating cost at approximately $9,038.41.
+
+[View the Fleet Cost & Reliability Analytics Case Study](reports/fleet_analytics_case_study.md)
+
+## Fleet SQL & PostgreSQL Project
 
 This project uses a PostgreSQL database to practice storing, joining, filtering, and analyzing fleet data.
 
