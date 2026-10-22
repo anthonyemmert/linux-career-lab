@@ -142,7 +142,7 @@ SQL concepts:
 
 ## SQL Files
 
-`fleet-management-queries.sql` contains the fleet-management queries used throughout the project.
+`sql/fleet-management-queries.sql` contains the fleet-management queries used throughout the project.
 
 
 ## Fleet Management Reporting
@@ -157,7 +157,7 @@ maintenance records and vehicle downtime.
 - Total downtime days
 
 ### Files
-- fleet-management-report-view.sql: Creates the reporting view.
+- sql/fleet-managment-report-view.sql: Creates the reporting view.
 - reports/fleet_management_report.csv: Exported report results.
 - [Fleet Findings Report](reports/fleet-findings-september-2026.md): One-page analysis of fleet maintenance costs, repair frequency, and downtime.
 - [Fleet Analysis Spreadsheet](reports/fleet_analysis.ods): LibreOffice Calc analysis demonstrating sorting, filtering, formulas, VLOOKUP, and IFERROR.
