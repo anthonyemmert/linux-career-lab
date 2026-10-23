@@ -1,9 +1,12 @@
 import csv
+from pathlib import Path
 
-input_file = "data/fleet_raw.csv"
-output_file = "data/fleet_analytics.csv"
+DATA_DIR = Path(__file__).resolve().parent
 
-with open(input_file, newline="") as f:
+input_file = DATA_DIR / "fleet_raw.csv"
+output_file = DATA_DIR / "fleet_analytics.csv"
+
+with input_file.open(newline="") as f:
     rows = list(csv.DictReader(f))
 
 clean_rows = []
@@ -60,7 +63,7 @@ headers = [
     "cost_per_mile",
 ]
 
-with open(output_file, "w", newline="") as f:
+with output_file.open("w", newline="") as f:
     writer = csv.DictWriter(f, fieldnames=headers)
     writer.writeheader()
     writer.writerows(clean_rows)

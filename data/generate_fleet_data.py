@@ -1,7 +1,10 @@
 import csv
 import random
+from pathlib import Path
 
 random.seed(42)
+DATA_DIR = Path(__file__).resolve().parent
+OUTPUT_FILE = DATA_DIR / "fleet_raw.csv"
 
 vehicles = [
     ("Ford", "Transit", "Van"),
@@ -83,9 +86,9 @@ headers = [
     "fuel_cost"
 ]
 
-with open("data/fleet_raw.csv", "w", newline="") as file:
+with OUTPUT_FILE.open("w", newline="") as file:
     writer = csv.writer(file)
     writer.writerow(headers)
     writer.writerows(rows)
 
-print("Created data/fleet_raw.csv with 75 vehicles.")
+print(f"Created {OUTPUT_FILE} with 75 vehicles.")
